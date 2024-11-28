@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+<!--	URL「/confirm」に遷移する-->
+	<form th:action="@{/confirm}" method="post">
+		<div>
+			<lable for="name">名前：</lable>
+			<input type="text" name="name">
+		</div>
+		<div>
+			<lable for="age">年齢：</lable>
+			<input type="number" name="age">
+		</div>	
+		<div>
+			<label for="birth">生年月日</label>
+			<input type="date" name="birth">
+		</div>
+		<input type="submit" value="送信">
+	</form>
+
+</body>
+</html>
